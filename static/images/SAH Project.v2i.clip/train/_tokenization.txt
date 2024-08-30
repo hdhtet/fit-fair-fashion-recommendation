@@ -1,0 +1,4 @@
+An example picture from the SAH Project dataset depicting a hourglass
+An example picture from the SAH Project dataset depicting a inverted triangle
+An example picture from the SAH Project dataset depicting a rectangle
+An example picture from the SAH Project dataset depicting a triangle

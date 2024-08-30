@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formal Clothes</title>
+  <link href="static/css/casual&formalstyle.css" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!--Navigation Bar-->
+
+  <nav>
+    <div class="nav-content">
+      <div class="logo"><a href="/home">Fitfair</a></div>
+      <label for="check" class="checkbox">
+        <i class="bx bx-menu"></i>
+      </label>
+
+      <input type="checkbox" name="check" id="check" />
+
+      <!--Navigation Links-->
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="#about-us">About</a></li>
+        <li><a href="/analyze-with-ai">Analyze with AI</a></li>
+        <li><a href="/body-type-guide">Body Type Guide</a></li>
+        <li>
+          <button id="sign-in">Sign In</button>
+        </li>
+      </ul>
+    </div>
+    <hr style="border: 0.5px solid black; max-width: 1200px; margin: auto" />
+  </nav>
+
+  <section>
+    <div class="upper-text">
+      <p class="main-heading">Our Recommendations For You</p>
+      <p class="sub-heading">Formal Clothes</p>
+      <p class="text">
+        Formal clothes offers numerous benefits, particularly in professional
+        and social settings. One of the primary advantages is the positive
+        image they project. Formal attire is often associated with
+        professionalism, competence, and reliability, which can significantly
+        influence how others perceive you. This perception is crucial in
+        business environments, where trust and respect are key to successful
+        interactions.
+      </p>
+    </div>
+
+    <div class="image-container">
+      <h1>Top</h1>
+      <div class="top-wrapper wrapper">
+        <i id="left" class="bx bx-chevron-left"></i>
+        <div class="imageContainer">
+          {% for c in clothes %} {% if 'top' in c %}
+          <img src="{{c}}" alt="image" draggable="false" />
+          {% endif %} {% endfor %}
+        </div>
+        <i id="right" class="bx bx-chevron-right"></i>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <h1>Bottom</h1>
+      <div class="low-wrapper wrapper">
+        <i id="left" class="bx bx-chevron-left"></i>
+        <div class="imageContainer">
+          {% for c in clothes %} {% if 'bottom' in c %}
+          <img src="{{c}}" alt="image" draggable="false" class="low-img" />
+          {% endif %} {% endfor %}
+        </div>
+        <i id="right" class="bx bx-chevron-right"></i>
+      </div>
+    </div>
+    
+    <div class="btn-holder">
+      <form action="/casual-clothes" method="post">
+        <button class="pill-button">
+          <i class="bx bxs-right-top-arrow-circle"></i>
+          <p>Try Casual Clothes</p>
+          <input type="hidden" value="casual" name="style" />
+          <input type="hidden" value="{{bodyshape}}" name="bodytype" />
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <script src="../static/js/script.js"></script>
+</body>
+
+</html>

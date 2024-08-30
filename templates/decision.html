@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Decision Page</title>
+  <link rel="stylesheet" href="../static/css/decision.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+  <div id="loading-animation">
+    <lottie-player src="https://lottie.host/5bb9dcf0-df5d-4713-a270-fe9d04a65de6/YWPfPOh8RD.json" background="#FFFFFF"
+      speed="0.5" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal">
+    </lottie-player>
+    <p>Please wait a minute. Finding best matches for your body type.</p>
+  </div>
+
+  <div class="container">
+    <nav>
+      <div class="logo"><a href="/home">Fitfair</a></div>
+    </nav>
+
+    <div class="formal">
+      <p>Formal</p>
+      <div class="formal-btn-holder">
+        <form action="/formal-clothes" method="post" onsubmit="showLoadingAnimation()">
+          <button class="pill-button">
+            <i class="bx bxs-right-top-arrow-circle"></i>
+            <p>Try Formal Clothes</p>
+            <input type="hidden" value="formal" name="style" />
+            <input type="hidden" value="{{bodytype}}" name="bodytype" />
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="casual">
+      <p>Casual</p>
+      <div class="casual-btn-holder">
+        <form action="/casual-clothes" method="post" onsubmit="showLoadingAnimation()">
+          <button class="pill-button">
+            <i class="bx bxs-right-top-arrow-circle"></i>
+            <p>Try Casual Clothes</p>
+            <input type="hidden" value="casual" name="style" />
+            <input type="hidden" value="{{bodytype}}" name="bodytype" />
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="../static/js/script.js"></script>
+</body>
+
+</html>

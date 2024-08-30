@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitFair</title>
+  <link rel="stylesheet" href="static/css/style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!--Navigation Bar-->
+
+  <nav>
+    <div class="nav-content">
+      <div class="logo"><a href="#">Fitfair</a></div>
+      <label for="check" class="checkbox">
+        <i class="bx bx-menu"></i>
+      </label>
+
+      <input type="checkbox" name="check" id="check" />
+
+      <!--Navigation Links-->
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="#about-us">About</a></li>
+        <li><a href="/body-type-guide">Body Type Guide</a></li>
+        <li><a href="/analyze-with-ai">Analyze with AI</a></li>
+        <li><button id="sign-in">Sign In</button></li>
+      </ul>
+    </div>
+    <hr style="border: 0.5px solid black; max-width: 1200px; margin: auto" />
+  </nav>
+
+  <!--Discover Section-->
+
+  <section id="discover">
+    <div class="section-container">
+      <!--Left Text-->
+      <div class="content">
+        <h1 class="heading">Unlock Your Style Potential with FitFair</h1>
+        <hr style="border: 0.5px solid black; margin: 20px 0" />
+        <p class="description">
+          Step into a world of personalized style. With Fitfair, you'll never
+          have to wonder what to wear again. Get ready to make every moment
+          stylish with recommendations that fit your unique look and
+          personality.
+        </p>
+        <div class="btn-holder">
+          <a href="/choose-body-type">
+            <button class="pill-button" onclick="">
+              <i class="bx bxs-shapes"></i>
+              <p>Discover Now</p>
+            </button>
+          </a>
+        </div>
+      </div>
+      <!--Right Image-->
+      <div class="image">
+        <img src="static/images/Fitfair Group 2.png" alt="image" />
+      </div>
+    </div>
+    <hr style="border: 0.5px solid black; max-width: 1200px; margin: auto" />
+  </section>
+
+  <!--About Us Section-->
+
+  <section id="about-us">
+    <!--About Us Text-->
+    <div class="about-us">
+      <div class="text">
+        <h1 class="heading">About Us</h1>
+        <p class="description">
+          At Fitfair, we believe that fashion should be as unique as you are.
+          Our mission is to empower everyone to feel confident and stylish, no
+          matter their body shape or size. We understand that finding the
+          perfect outfit can be challenging, especially when you're unsure of
+          what suits you best. That's why we created Fitfair—a smart,
+          intuitive app that takes the guesswork out of getting dressed.
+          <br />
+          <br />
+          Our innovative AI technology analyzes your body shape and
+          preferences to provide personalized clothing and fragrance
+          recommendations tailored to your specific needs. Whether you're
+          preparing for a casual day out or a special occasion, Fitfair
+          ensures you step out feeling your best.
+        </p>
+      </div>
+      <!--About Us Image-->
+      <div class="photo">
+        <img src="static/images/Fitfair Group 3.png" alt="main-photo" />
+      </div>
+    </div>
+    <hr style="border: 0.5px solid black; max-width: 1200px; margin: auto" />
+  </section>
+
+  <!--Price Plan Section-->
+
+  <!-- <section id="pricing">
+      <div class="card-container">
+        <div class="price-plan-heading">
+          <h1>Price Plan</h1>
+        </div>
+        <div class="price-card-container">
+          <div class="price-card">
+            <p class="price">$0 <span>/ month</span></p>
+            <h2>Free Plan</h2>
+            <p class="price-label">For Starters</p>
+            <div class="features">
+              <div><i class="bx bxs-check-circle"></i>Normal AI analysis.</div>
+              <div>
+                <i class="bx bxs-check-circle"></i>Cloud wardrobe: 10 uploads
+              </div>
+              <div><i class="bx bxs-check-circle"></i>1GB Storage</div>
+              <div style="margin-bottom: 10px">
+                <i class="bx bxs-check-circle"></i>Includes ads.
+              </div>
+            </div>
+            <div class="action-btn">
+              <button>Purchase</button>
+            </div>
+          </div>
+          <div class="price-card">
+            <p class="price">45000MMK <span>/ month</span></p>
+            <h2>Advanced Plan</h2>
+            <p class="price-label">For Small Businesses</p>
+            <div class="features">
+              <div>
+                <i class="bx bxs-check-circle"></i>Advanced AI analysis included
+              </div>
+              <div>
+                <i class="bx bxs-check-circle"></i>Cloud wardrobe: 60 images.
+              </div>
+              <div><i class="bx bxs-check-circle"></i>100GB Storage</div>
+              <div><i class="bx bxs-check-circle"></i>No ads.</div>
+              <div>
+                <i class="bx bxs-check-circle"></i>Upload, share outfits.
+              </div>
+            </div>
+            <div class="action-btn">
+              <button>Purchase</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+  <!--Footer Section-->
+
+  <section class="footer-container" id="footer">
+    <div class="footer">
+      <div class="upper">
+        <!--Footer Upper Left Logo & Copyright-->
+        <div class="upper-left">
+          <p class="logo-text">Fitfair</p>
+          <p class="copyright">
+            Copyright&#169; 2024.Fitfair All Rights Reserved
+          </p>
+        </div>
+        <!--Footer Upper Right Input Box-->
+        <div class="upper-right">
+          <h6>Get the latest Information</h6>
+          <form>
+            <i class="bx bx-envelope"></i>
+            <input type="text" placeholder="Email Address" style="color: white" />
+            <button type="submit">
+              <i class="bx bxs-send"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="lower">
+        <!--Footer Navigation Links-->
+        <div class="lower-left">
+          <div><a href="#discover">Home</a></div>
+          <div><a href="#about-us">About</a></div>
+          <div><a href="#discover">Contact</a></div>
+        </div>
+        <!--Footer Social Icons-->
+        <div class="lower-right">
+          <div><i class="bx bxl-facebook"></i></div>
+          <div><i class="bx bxl-linkedin"></i></div>
+          <div><i class="bx bxl-twitter"></i></div>
+          <div><i class="bx bxl-youtube"></i></div>
+          <div><i class="bx bxl-instagram"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="static/js/script.js"></script>
+</body>
+
+</html>

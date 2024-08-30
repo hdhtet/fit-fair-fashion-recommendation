@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="static/css/choosebody.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo"><a href="/home">FitFair</a></div>
+    </div>
+  </nav>
+
+  <section>
+    <h3 class="bodyTypeHeading">Choose Your Body Type</h3>
+
+    <div class="bodyTypeFrame">
+      <div class="bodyTypeHover">
+        <form action="/choose-body-type" method="post" enctype="multipart/form-data">
+          <button class="chooseBodybtn">
+            <img src="static/images/TriBlack.svg" alt="img" />
+            <img src="static/images/TriWhite.svg" alt="img" />
+            <p>Triangle</p>
+            <input type="hidden" value="Triangle" name="bodytype">
+          </button>
+        </form>
+      </div>
+
+      <form action="/choose-body-type" method="post" enctype="multipart/form-data">
+        <div class="bodyTypeHover">
+          <button class="chooseBodybtn">
+            <img src="static/images/hourBlack.svg" alt="img" />
+            <img src="static/images/hourWhite.svg" alt="img" />
+            <p>Hourglass</p>
+            <input type="hidden" value="Hourglass" name="bodytype">
+          </button>
+        </div>
+      </form>
+
+      <form action="/choose-body-type" method="post" enctype="multipart/form-data">
+        <div class="bodyTypeHover">
+          <button class="chooseBodybtn">
+            <img src="static/images/invTriBlack.svg" alt="img" />
+            <img src="static/images/invTriWhite.svg" alt="img" />
+            <p>Inverted Triangle</p>
+            <input type="hidden" value="Inverted Triangle" name="bodytype">
+          </button>
+        </div>
+      </form>
+
+      <form action="/choose-body-type" method="post" enctype="multipart/form-data">
+        <div class="bodyTypeHover">
+          <button class="chooseBodybtn">
+            <img src="static/images/Rectangle 6.svg" alt="img" />
+            <img src="static/images/RecWhite.svg" alt="img" />
+            <p>Rectangle Body Type</p>
+            <input type="hidden" value="Rectangle" name="bodytype">
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <a href="/body-type-guide">
+      <p class="bodyTypeLink">
+        <u>Don't know your body type?</u>
+      </p>
+    </a>
+  </section>
+  <script src="static/js/bodyguide.js"></script>
+</body>
+
+</html>

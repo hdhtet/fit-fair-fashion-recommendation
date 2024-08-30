@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: #111;
+  --secondary-color: #3e5c76;
+  --light-color: #fefaf7;
+  --max-width: 1200px;
+}
+
+body {
+  background-color: var(--light-color);
+}
+
+.nav-content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: all ease 0.3s;
+  text-decoration: none;
+}
+
+.chooseBodybtn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Hides the second image initially */
+.chooseBodybtn img:nth-child(2) {
+  display: none;
+}
+
+/* On hover, switch the visibility of the images */
+.chooseBodybtn:hover img:nth-child(1) {
+  display: none;
+}
+
+.chooseBodybtn:hover img:nth-child(2) {
+  display: block;
+}
+
+/* Ensure the images stack on top of each other */
+
+/* Header styling */
+.bodyTypeHeading {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+  font-family: "Montserrat";
+}
+
+/* Frame for body type images */
+.bodyTypeFrame {
+  background-color: gray;
+  max-width: var(--max-width);
+  margin: 20px auto;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+/* Styling for individual body type buttons */
+.bodyTypeHover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 280px;
+  height: 340px;
+  transition: transform 0.3s ease-in-out;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.bodyTypeHover img {
+  margin: 0 auto;
+  padding: 10px;
+}
+.chooseBodybtn p {
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+/* Scaling effect on hover */
+.bodyTypeHover:hover {
+  transform: scale(1.06);
+  background-color: black;
+}
+.bodyTypeHover:hover p {
+  color: white;
+}
+/* Link styling */
+.bodyTypeLink {
+  align-items: center;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  margin-top: 100px;
+}
+/* this is for the responsive */
+@media (max-width: 1190px) {
+  /* Adjusting the header font size and alignment for mobile screens */
+  .bodyTypeHeading {
+    font-size: 3rem; /* Smaller font size */
+    margin-top: 20px 0; /* Reduce margin */
+    text-align: center; /* Center text */
+  }
+
+  /* Adjusting the body type frame layout for mobile screens */
+
+  .bodyTypeFrame {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 10rem;
+  }
+
+  /* Adjusting body type button size and layout for mobile screens */
+  .bodyTypeHover {
+    width: 100%; /* Reduce width to fit mobile screens */
+    height: auto; /* Auto height to fit content */
+    margin: 10px 0; /* Margin between items */
+    padding: 0.5rem; /* Reduce padding */
+    text-align: center; /* Center text inside button */
+  }
+
+  /* Scaling effect adjustments */
+  .bodyTypeHover:hover {
+    transform: scale(1.03); /* Smaller scaling effect */
+  }
+
+  /* Adjusting link styling for mobile screens */
+  .bodyTypeLink {
+    font-size: 1rem; /* Smaller font size */
+    text-align: center; /* Center text */
+  }
+
+  /* Adjusting the positioning and size of images */
+  .chooseBodybtn img {
+    max-width: 80%; /* Ensure images fit within the button */
+  }
+
+  .chooseBodybtn {
+    width: 100%; /* Full width for buttons */
+  }
+  .nav-content .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .bodyTypeLink {
+    margin: 15px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .bodyTypeFrame {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 1rem;
+  }
+}

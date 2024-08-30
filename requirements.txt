@@ -1,0 +1,9 @@
+git+https://github.com/openai/CLIP.git
+scikit-learn
+numpy
+pillow
+torch==2.3.0
+torch
+torchvision==0.18.0
+flask
+transformers
