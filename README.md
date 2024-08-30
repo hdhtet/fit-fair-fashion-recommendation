@@ -58,6 +58,7 @@ Interactive Experience: Users can explore various outfit suggestions, customize 
 ├── templates/                    # HTML templates for the UI
 └── TBIR_model/                   # Directory for trained models and assets
 !!! processed_images.pkl file not pushed to git due to large storage !!!
+- can download file from drive - https://drive.google.com/file/d/1Qqs_0Bz27FTc1cUZvPpDNf-RhEaAcokE/view?usp=sharing
 
 
 * Technologies Used
