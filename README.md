@@ -13,7 +13,7 @@ Comprehensive Outfit Pairing: Delivers complete outfit suggestions, including to
 * Quick Start Guide
 1. Clone the Repository
 Begin by cloning the project repository to your local machine:
-git clone https://github.com/yourusername/fashion-recommendation-system.git
+git clone https://github.com/hdhtet/fit-fair-fashion-recommendation.git
 cd fashion-recommendation-system
 
 2. Set Up the Environment
